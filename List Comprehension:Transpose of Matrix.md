@@ -18,10 +18,26 @@ To write a Python program to compute the **transpose** of a matrix using **list 
 ---
 
 ## 💻 PROGRAM:
-ADD CODE HERE
+```
+def create(r, c):
+    print("Enter matrix row by row:")
+    return [[int(input(f"Element [{i+1}][{j+1}]: ")) for j in range(c)] for i in range(r)]
+
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
+
+matrix = create(r, c)
+
+transpose = [[matrix[j][i] for j in range(r)] for i in range(c)]
+
+print("Transposed Matrix:")
+for row in transpose:
+    print(row)
+```
 
 ## OUTPUT:
+<img width="1392" height="734" alt="image" src="https://github.com/user-attachments/assets/e44a1a1d-b4fe-402a-b429-60fb6c58484b" />
 
 ## RESULT:
-
+Therefore the given Python Program has been executed successfully and the output has been verified.
 
